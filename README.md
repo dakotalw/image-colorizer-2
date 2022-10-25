@@ -1,5 +1,9 @@
 # DS5660: Modeling and Machine Learning 2 Project
 
+## CoLab Doc
+
+- https://colab.research.google.com/drive/1CgziQt01V8Dgy-UoFwoOchGtv6oudlRL
+
 ## Project Proposal Presentation
 - https://docs.google.com/presentation/d/1-sJxK8-0W_SLHYYUefFSw8JdowlFc3I6kJrkmOeK_As/edit?usp=sharing
 
