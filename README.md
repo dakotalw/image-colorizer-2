@@ -4,8 +4,11 @@
 
 - https://colab.research.google.com/drive/1CgziQt01V8Dgy-UoFwoOchGtv6oudlRL
 
-## Project Proposal Presentation
+## Presentations
+### Project Proposal
 - https://docs.google.com/presentation/d/1-sJxK8-0W_SLHYYUefFSw8JdowlFc3I6kJrkmOeK_As/edit?usp=sharing
+### Project Update
+- https://docs.google.com/presentation/d/1Xwd8CInpiFikdChDsGNFEL_u_XBHfl_sn9EOeuunm7Q/edit#slide=id.g1764e961685_0_0
 
 ## Dataset
 - https://www.kaggle.com/datasets/gpiosenka/sports-classification
