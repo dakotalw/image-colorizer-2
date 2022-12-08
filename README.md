@@ -9,6 +9,8 @@
 - https://docs.google.com/presentation/d/1-sJxK8-0W_SLHYYUefFSw8JdowlFc3I6kJrkmOeK_As/edit?usp=sharing
 ### Project Update
 - https://docs.google.com/presentation/d/1Xwd8CInpiFikdChDsGNFEL_u_XBHfl_sn9EOeuunm7Q/edit#slide=id.g1764e961685_0_0
+### Final Report
+- https://docs.google.com/presentation/d/1cXnm0U4syPZBJmaWw4hSOy2qYJXzOz-uaxTMBYvSuJs/edit#slide=id.g1a69b522519_0_665
 
 ## Dataset
 - https://www.kaggle.com/datasets/gpiosenka/sports-classification
