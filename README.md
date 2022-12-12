@@ -31,4 +31,7 @@
 
 - Output will show the original image, the image with all color removed (model input), and the re-colorized image (model output).
 
-- Example input: python final-script.py /path/on/your/machine/image.jpeg
+- Example input: 
+```console 
+python final-script.py /path/on/your/machine/image.jpeg 
+```
