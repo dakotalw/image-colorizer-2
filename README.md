@@ -14,6 +14,7 @@
 ## Sample Code
 - https://github.com/richzhang/colorization
 - https://www.kaggle.com/code/theblackmamba31/autoencoder-grayscale-to-color-image
+- https://lukemelas.github.io/image-colorization.html (Baseline model)
 
 ## PyTorch Help
 - https://app.datacamp.com/learn/courses/deep-learning-with-pytorch
@@ -24,4 +25,5 @@
 - Jonathan Srinivasan (jonathan.devaraj.srinivasan@vanderbilt.edu)
 
 ## Instructions to run:
-- Change loaded .pth file path in run-script.py to wherever 'model-epoch-186-losses-0.124.pth' is saved locally. Python script will take in one parameter which is the path for image to be colorized. Output will show the original image, the image with all color removed (model input), and the re-colorized image (model output).
+- Change loaded .pth file path in run-script.py to where 'model-epoch-186-losses-0.124.pth' (found in checkpoints folder) is saved locally. Python script will take in one parameter which is the path for image to be colorized. Output will show the original image, the image with all color removed (model input), and the re-colorized image (model output).
+
