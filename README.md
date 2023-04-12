@@ -22,4 +22,7 @@ DS-5899: Special Topics in Data Science - Transformers in Theory and Practice
 
 ## Resources
 
+- https://github.com/richzhang/colorization
+- https://www.kaggle.com/code/theblackmamba31/autoencoder-grayscale-to-color-image
+- https://lukemelas.github.io/image-colorization.html (Baseline model)
 
