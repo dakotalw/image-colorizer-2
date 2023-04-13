@@ -71,7 +71,7 @@ To revisit the loss function - as mentioned, LPIPS is not perfect and although i
 
 ## Next Steps
 
-The objective of this project is to show the advancements in image colorization. We initally improved our CNN model by replacing the MSE loss function in our with the Learned Perceptual Image Patch Similarity (LPIPS) loss function. This change resulted in a significant boost in model performance. However, more recently, other loss functions have emerged that offer even greater accuracy than LPIPS.
+The objective of this project is to show the advancements in image colorization. We initally improved our CNN model by replacing the MSE loss function in our with the Learned Perceptual Image Patch Similarity (LPIPS) loss function. This change resulted in a significant boost in model performance. However, more recently, other loss functions have emerged that offer even greater accuracy than LPIPS. In addition to all of this, the increase in computational avaliability and efficiency will allow us in the future to be able to create similar models that work at much higher resolutions than 256 x 256.
 
 In addition to this, in terms of transformers, stable diffusion has taken over with anything to do with images. Stable diffusion allows us to colorize and modify images based on specific prompts. This technique enables us to create prompts that allow us to colorize black and white photos in a precise and efficient manner.  
 
