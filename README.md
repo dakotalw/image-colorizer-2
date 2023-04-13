@@ -20,7 +20,7 @@ What performs better in colorizing black and white photos? CNNs or Google ColTra
 - Dataset of sports photos (408.5 MB)
 - Includes photos of over 100 sports, with 10,000+ entries
 - https://www.kaggle.com/datasets/gpiosenka/sports-classification
-
+- Our original hope was to fine-tune our model using these sports photos in attempts to make a model that was decent at predicting humans (skin color, clothing etc.).
 
 ## Methodology
 
