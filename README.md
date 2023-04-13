@@ -35,7 +35,7 @@ Attention can prove to be incredibly helpful in the completion of this task; by 
 
 ![eating](https://user-images.githubusercontent.com/48261978/231761743-e9a30b62-1fde-428b-9830-e9196ee9f5aa.jpg)
 
-Prompt: "Barack Obama eating food. Barack Obama is happy to be eating food. High quality"
+Prompt: "Barack Obama eating food. Barack Obama is happy to be eating food. High quality"                                                
 Negative Prompt: "black and white, low quality, no food"
 
 ![obama1](https://user-images.githubusercontent.com/48261978/231761802-90e5ee0c-db74-4197-8c95-f5530490297a.png)
