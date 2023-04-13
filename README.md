@@ -57,7 +57,9 @@ To revisit the loss function - as mentioned, LPIPS is not perfect and although i
 
 ![bw-outputs](https://github.com/dakotalw/image-colorizer-2/blob/main/bw-output.png)
 
-## Stable Diffusion
+## Next Steps
+
+### Stable Diffusion
 
 - Neural Network called ControlNet
 - **Canny Edge Detection Algorithm:** applied to the image to extract edges and convert it into a binary image. The process involves smoothing the image using a Gaussian filter, computing the gradient magnitude and direction at each pixel, suppressing non-maximum edges, and hysteresis thresholding to remove weak edges.        
