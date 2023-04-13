@@ -34,7 +34,9 @@ Attention can prove to be incredibly helpful in the completion of this task; by 
 
 ![ColTran Architecture](https://github.com/dakotalw/image-colorizer-2/blob/main/coltran_architecture.png)
 
-ColTran is comprised of three parts: an autoregressive colorizer that is based on a 
+ColTran is comprised of three parts: an autoregressive colorizer that is based on a conditional variant of the Axial Transformer for low resolution coarse colorization. This outputs colors for the input grayscale into a 64 x 64 image, but does not combine them together. A color upsampler, which takes the color output from the first part, adds the grayscale parts (scaled down to 64x64) from the original image, and tries to improve the color based on the new complete image, all while still working with a 64x64 image. Finally, the third part takes the full color 64 x 64 image and proceeds to scale it back up to a 256 x 256 image.
+
+ColTran was trained using the ImageNet database photos. Each of the three parts (colorizer, color upsampler, image upsampler) were trained with a batch-size of 224, 768 and 32 for 600K, 450K and 300K steps respectively. 4 axial attention blocks were used in each component of the architecture, with a hidden size of 512 and 4 heads.
 
 
 ### Testing
@@ -45,9 +47,9 @@ In our testing, the CNN output images actually had a slightly lower LPIPS score 
 
 ### Limitations
 
-Unfortunately, a common issue experienced across all computer vision tasks regardless of architecture is the high computational cost of processing images. This issue only worsens with higher quality images, which are becoming more and more prevalent as time goes on. For both our model and ColTran, images needed to be resized to 224 x 224 pixels for computational efficiency. This increase in time and computation experienced with larger images may be manageable when we are predicting across images, but training a model with larger images will quickly add orders of magnitude to computation time and costs.
+Unfortunately, a common issue experienced across all computer vision tasks regardless of architecture is the high computational cost of processing images. This issue only worsens with higher quality images, which are becoming more and more prevalent as time goes on. For both our model and ColTran, images needed to be resized to 256 x 256 pixels for computational efficiency. This increase in time and computation experienced with larger images may be manageable when we are predicting across images, but training a model with larger images will quickly add orders of magnitude to computation time and costs.
 
-This is not the worst problem to have, however! Modern transformer architectures have been developed to upscale images from lower pixel dimensions into higher quality images. This is even applied in ColTran; in the third and final step of predicting, the model takes a 64 x 64 image and scales it all the way up to 224 x 224.
+This is not the worst problem to have, however! Modern transformer architectures have been developed to upscale images from lower pixel dimensions into higher quality images. This is even applied in ColTran; in the third and final step of predicting, the model takes a 64 x 64 image and scales it all the way up to 256 x 256.
 
 To revisit the loss function - as mentioned, LPIPS is not perfect and although it may be a better estimator of image similarity than something like MSE, it still has its issues. There have been new loss functions developed, both at a per-pixel level and at a perceptual level to try and alleviate the difficulty in estimating image similarity numerically, that may be better fit for estimating the accuracy of these models. This is entirely up to the discretion of the engineer training a model, and depending on the CV task at hand, loss functions may differ. In the case of ColTran, a per-pixel log-liklihoood function was used to estimate color similarity. 
 
