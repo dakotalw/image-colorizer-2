@@ -53,7 +53,7 @@ This is not the worst problem to have, however! Modern transformer architectures
 
 To revisit the loss function - as mentioned, LPIPS is not perfect and although it may be a better estimator of image similarity than something like MSE, it still has its issues. There have been new loss functions developed, both at a per-pixel level and at a perceptual level to try and alleviate the difficulty in estimating image similarity numerically, that may be better fit for estimating the accuracy of these models. This is entirely up to the discretion of the engineer training a model, and depending on the CV task at hand, loss functions may differ. In the case of ColTran, a per-pixel log-liklihoood function was used to estimate color similarity. 
 
-## Results/Analysis
+## Inferencing Using Black and White Photos
 
 
 ## Stable Diffusion
