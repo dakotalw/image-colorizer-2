@@ -32,6 +32,8 @@ Let's use a CNN that we previously constructed for another course and compare it
 
 ![Capture1](https://user-images.githubusercontent.com/48261978/231642125-66ce5354-792b-4f5d-a11e-699f3e4beacd.PNG)
 
+- The A channel represents the color from green to red, with negative values indicating green and positive values indicating red. The A channel represents the color from blue to yellow, with negative values indicating blue and positive values indicating yellow. The main advantage of using AB channels is that it helps separates the color information from the brightness information.
+
 - LPIPS: Learned Perceptual Image Patch Similarity - a metric created to try and replicate human vision. This loss function takes in two images and tries to define how different they are in the sense of human vision, as opposed to solely relying on pixel-wide differences. The LPIPS loss is computed as the cosine distance between the feature representations of the source and target images at each layer, normalized by the magnitude of the feature vectors. In our CNN project, we had taken a pre-existing model and outfitted it with this new loss to improve upon original results. This is the metric that we will be using in this project for evaluating the accuracy of our outputs against each other. 
 
 ### Google ColTran
