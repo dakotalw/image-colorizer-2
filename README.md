@@ -60,16 +60,19 @@ This is not the worst problem to have, however! Modern transformer architectures
 
 ```python
 enable_xformers_memory_efficient_attention()
-```                                    
+```
+Original:              
+![kideating](https://user-images.githubusercontent.com/48261978/231781731-9383cffa-efea-4fd6-98cf-80bb63160746.jpg)
 
-![eating](https://user-images.githubusercontent.com/48261978/231761743-e9a30b62-1fde-428b-9830-e9196ee9f5aa.jpg)
+After Canny Edge Detection:
+![kid2](https://user-images.githubusercontent.com/48261978/231782443-bdd38f06-dde0-488b-b7be-4fbef1ca6cde.png)
 
-Prompt: "Barack Obama eating food. Barack Obama is happy to be eating food. High quality"                                                
-Negative Prompt: "black and white, low quality, no food"                                  
 
-![download](https://user-images.githubusercontent.com/48261978/231765686-463a073a-ead1-4e49-99e7-812389570b1d.png)
+Prompt: ["add color to this image, portrait, high quality"]                                              
+Negative Prompt: ["black and white, cartoon, low quality"]                                
 
-![obama1](https://user-images.githubusercontent.com/48261978/231761802-90e5ee0c-db74-4197-8c95-f5530490297a.png)
+![kid1](https://user-images.githubusercontent.com/48261978/231782496-4379b696-81be-411c-b4b4-3ece884eea3c.png)
+
 
 
 ## Resources
