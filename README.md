@@ -100,9 +100,10 @@ Using stable diffusion on sports photos:
 
 ![sports](https://user-images.githubusercontent.com/48261978/231811822-2562b3fe-3097-4dd8-8772-eef246af53e2.jpg)
 
-Prompt: ["add color to this image, portrait, high quality"]                                              
+Prompt: ["add color to this image, portrait, high quality, two soccer opponents shaking hands, they are in a soccer field, Pelé & Giacinto Facchetti shaking hands, a lot of fans in the background"]                      
 
 
+![soccer](https://user-images.githubusercontent.com/48261978/231812199-6b503fa3-f5cf-4591-8394-2a89aea90e75.png)
 
 
 ## Resources
@@ -115,4 +116,5 @@ ColTran:
 - https://arxiv.org/pdf/2102.04432.pdf (Colorization Transformer - Google Brain Team)
 - https://arxiv.org/abs/1912.12180 (Axial Attention in Multidimensional Transformers - Ho et al. 2019)
 - https://github.com/google-research/google-research/tree/master/coltran
-Stable Diffusion:
+
+Stable Diffusion:                        
