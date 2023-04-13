@@ -55,6 +55,7 @@ To revisit the loss function - as mentioned, LPIPS is not perfect and although i
 
 ## Inferencing Using Black and White Photos
 
+![bw-outputs](https://github.com/dakotalw/image-colorizer-2/blob/main/bw-output.png)
 
 ## Stable Diffusion
 
@@ -80,8 +81,10 @@ Negative Prompt: ["black and white, cartoon, low quality"]
 
 
 ## Resources
-
+CNN:
 - https://github.com/richzhang/colorization
 - https://www.kaggle.com/code/theblackmamba31/autoencoder-grayscale-to-color-image
 - https://lukemelas.github.io/image-colorization.html (Baseline model)
-
+ColTran:
+- https://arxiv.org/pdf/2102.04432.pdf (Colorization Transformer - Google Brain Team)
+- https://arxiv.org/abs/1912.12180 (Axial Attention in Multidimensional Transformers - Ho et al. 2019)
