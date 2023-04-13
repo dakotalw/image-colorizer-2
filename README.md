@@ -45,6 +45,8 @@ ColTran is comprised of three parts: an autoregressive colorizer that is based o
 
 ColTran was trained using the ImageNet database photos. Each of the three parts (colorizer, color upsampler, image upsampler) were trained with a batch-size of 224, 768 and 32 for 600K, 450K and 300K steps respectively. 4 axial attention blocks were used in each component of the architecture, with a hidden size of 512 and 4 heads.
 
+ColTran has also been optimized to work as efficiently as possible with computational resouces; for instance the first step is only predicitng a single channel of "course" color, which takes less effort to predict as opposed to 2 channels that are traditionally seen in the L\*a\*b\* color space. In addition to this, downsampling the image to 64 x 64 also decreases the computational requirements for both step 1 and 2 of the model. Comparatively, in our CNN, the smallest layer that an image is downsampled to is 128 x 128.
+
 
 ### Testing
 
