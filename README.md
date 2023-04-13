@@ -118,3 +118,4 @@ ColTran:
 - https://github.com/google-research/google-research/tree/master/coltran
 
 Stable Diffusion:                        
+- https://huggingface.co/lllyasviel/sd-controlnet-canny
