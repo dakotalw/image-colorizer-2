@@ -36,7 +36,19 @@ Attention can prove to be incredibly helpful in the completion of this task; by 
 ColTran is comprised of three parts: an autoregressive colorizer that is based on a 
 
 
+### Testing
 
+![outputs](https://github.com/dakotalw/image-colorizer-2/blob/main/grid_of_images.png)
+
+In our testing, the CNN output images actually had a slightly lower LPIPS score than ColTran. There could be several reasons for this, but it is more than likely due to the precision in the color of ColTran. We can observe that although the colors may not be as accurate, ColTran does a much better job of being consistent with its color choices, compared to the patchy look that our CNN gives. If an object is supposed to be blue, and a model predicts it as half blue and half red, the LPIPS would be lower for that prediction than if it had predicted completely red. However, when viewing one of these images, the all red image would look more natural to the human eye. This demonstrates both the weaknesss of LPIPS as well as how difficult it can be to create a loss function that accurately represents human vision.
+
+### Limitations
+
+Unfortunately, a common issue experienced across all computer vision tasks regardless of architecture is the high computational cost of processing images. This issue only worsens with higher quality images, which are becoming more and more prevalent as time goes on. For both our model and ColTran, images needed to be resized to 224 x 224 pixels for computational efficiency. This increase in time and computation experienced with larger images may be manageable when we are predicting across images, but training a model with larger images will quickly add orders of magnitude to computation time and costs.
+
+This is not the worst problem to have, however! Modern transformer architectures have been developed to upscale images from lower pixel dimensions into higher quality images. This is even applied in ColTran; in the third and final step of predicting, the model takes a 64 x 64 image and scales it all the way up to 224 x 224.
+
+## Results/Analysis
 
 
 ### Stable Diffusion
@@ -57,20 +69,6 @@ Negative Prompt: "black and white, low quality, no food"
 ![download](https://user-images.githubusercontent.com/48261978/231765686-463a073a-ead1-4e49-99e7-812389570b1d.png)
 
 ![obama1](https://user-images.githubusercontent.com/48261978/231761802-90e5ee0c-db74-4197-8c95-f5530490297a.png)
-
-### Testing
-
-![outputs](https://github.com/dakotalw/image-colorizer-2/blob/main/grid_of_images.png)
-
-In our testing, the CNN output images actually had a slightly lower LPIPS score than ColTran. There could be several reasons for this, but it is more than likely due to the precision in the color of ColTran. We can observe that although the colors may not be as accurate, ColTran does a much better job of being consistent with its color choices, compared to the patchy look that our CNN gives. If an object is supposed to be blue, and a model predicts it as half blue and half red, the LPIPS would be lower for that prediction than if it had predicted completely red. However, when viewing one of these images, the all red image would look more natural to the human eye. This demonstrates both the weaknesss of LPIPS as well as how difficult it can be to create a loss function that accurately represents human vision.
-
-### Limitations
-
-Unfortunately, a common issue experienced across all computer vision tasks regardless of architecture is the high computational cost of processing images. This issue only worsens with higher quality images, which are becoming more and more prevalent as time goes on. For both our model and ColTran, images needed to be resized to 224 x 224 pixels for computational efficiency. This increase in time and computation experienced with larger images may be manageable when we are predicting across images, but training a model with larger images will quickly add orders of magnitude to computation time and costs.
-
-This is not the worst problem to have, however! Modern transformer architectures have been developed to upscale images from lower pixel dimensions into higher quality images. This is even applied in ColTran; in the third and final step of predicting, the model takes a 64 x 64 image and scales it all the way up to 224 x 224.
-
-## Results/Analysis
 
 
 ## Resources
