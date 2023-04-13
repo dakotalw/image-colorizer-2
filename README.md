@@ -43,10 +43,10 @@ ColTran is comprised of three parts: an autoregressive colorizer that is based o
 
 - Neural Network called ControlNet
 - **Canny Edge Detection Algorithm:** applied to the image to extract edges and convert it into a binary image. The process involves smoothing the image using a Gaussian filter, computing the gradient magnitude and direction at each pixel, suppressing non-maximum edges, and hysteresis thresholding to remove weak edges.        
-- **Memory-Efficient Attention:** uses local attention, where the input sequence is split into chunks and self attention is applied to the chunks within a certain distance of the current position. [enable_xformers_memory_efficient_attention()]   
+- **Memory-Efficient Attention:** uses local attention, where the input sequence is split into chunks and self attention is applied to the chunks within a certain distance of the current position.  
 
 ```python
-print("Hello, World!")
+enable_xformers_memory_efficient_attention()
 ```                                    
 
 ![eating](https://user-images.githubusercontent.com/48261978/231761743-e9a30b62-1fde-428b-9830-e9196ee9f5aa.jpg)
