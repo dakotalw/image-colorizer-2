@@ -4,8 +4,15 @@ DS-5899: Special Topics in Data Science - Transformers in Theory and Practice
 
 ## Overview
 
-**Problem:** What performs better in colorizing black and white photos? CNNs or Google ColTran?                                
-*Note: How do we calculate image coloring performace? Loss function? Eye test? Speed?*
+**Problem:** 
+
+Color photography was first created in the 1890's however was very expensive and difficult to achieve. It was not until the 1970s, 80 years later, when the accessability and use of color photography became widespread. This leaves us with huge amounts of photographs that are stuck in black and white, but by using modern machine learning methods, we hope to be able to add color to these photos that we once thought would be stuck in black and white forever.
+
+We know that this has been done with CNNs in the past, however with the advent of transformer models, this is becoming easier and more accurate than ever. In this presentation, we hope to compare and contrast CNNs and transformers in their ability to colorize old photos.
+
+What performs better in colorizing black and white photos? CNNs or Google ColTran? 
+
+*Note: How do we calculate image coloring performace? Loss function? Eye test? Speed? Clarity?*
 
 
 ## Data
@@ -57,9 +64,7 @@ To revisit the loss function - as mentioned, LPIPS is not perfect and although i
 
 ![bw-outputs](https://github.com/dakotalw/image-colorizer-2/blob/main/bw-output.png)
 
-## Next Steps
-
-### Stable Diffusion
+## Stable Diffusion
 
 - Neural Network called ControlNet
 - **Canny Edge Detection Algorithm:** applied to the image to extract edges and convert it into a binary image. The process involves smoothing the image using a Gaussian filter, computing the gradient magnitude and direction at each pixel, suppressing non-maximum edges, and hysteresis thresholding to remove weak edges.        
