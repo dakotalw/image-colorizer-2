@@ -4,7 +4,7 @@ DS-5899: Special Topics in Data Science - Transformers in Theory and Practice
 
 ## Overview
 
-**Problem:** What performs better in colorizing black and white photos? CNNs or Google ColTran?
+**Problem:** What performs better in colorizing black and white photos? CNNs or Google ColTran?                                
 *Note: How do we calculate image coloring performace? Loss function? Eye test?*
 
 
