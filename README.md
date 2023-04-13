@@ -49,6 +49,8 @@ Unfortunately, a common issue experienced across all computer vision tasks regar
 
 This is not the worst problem to have, however! Modern transformer architectures have been developed to upscale images from lower pixel dimensions into higher quality images. This is even applied in ColTran; in the third and final step of predicting, the model takes a 64 x 64 image and scales it all the way up to 224 x 224.
 
+To revisit the loss function - as mentioned, LPIPS is not perfect and although it may be a better estimator of image similarity than something like MSE, it still has its issues. There have been new loss functions developed, both at a per-pixel level and at a perceptual level to try and alleviate the difficulty in estimating image similarity numerically, that may be better fit for estimating the accuracy of these models. This is entirely up to the discretion of the engineer training a model, and depending on the CV task at hand, loss functions may differ. In the case of ColTran, a per-pixel log-liklihoood function was used to estimate color similarity. 
+
 ## Results/Analysis
 
 
