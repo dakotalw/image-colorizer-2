@@ -96,6 +96,13 @@ Negative Prompt: ["black and white, cartoon, low quality"]
 
 ![kid1](https://user-images.githubusercontent.com/48261978/231782496-4379b696-81be-411c-b4b4-3ece884eea3c.png)
 
+Using stable diffusion on sports photos:                                        
+
+![sports](https://user-images.githubusercontent.com/48261978/231811822-2562b3fe-3097-4dd8-8772-eef246af53e2.jpg)
+
+Prompt: ["add color to this image, portrait, high quality"]                                              
+
+
 
 
 ## Resources
