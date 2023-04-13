@@ -92,6 +92,9 @@ CNN:
 - https://github.com/richzhang/colorization
 - https://www.kaggle.com/code/theblackmamba31/autoencoder-grayscale-to-color-image
 - https://lukemelas.github.io/image-colorization.html (Baseline model)
+
 ColTran:
 - https://arxiv.org/pdf/2102.04432.pdf (Colorization Transformer - Google Brain Team)
 - https://arxiv.org/abs/1912.12180 (Axial Attention in Multidimensional Transformers - Ho et al. 2019)
+- https://github.com/google-research/google-research/tree/master/coltran
+Stable Diffusion:
