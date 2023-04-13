@@ -106,6 +106,10 @@ Prompt: ["add color to this image, portrait, high quality, two soccer opponents 
 ![soccer](https://user-images.githubusercontent.com/48261978/231812199-6b503fa3-f5cf-4591-8394-2a89aea90e75.png)
 
 
+## Code Demo (ColTran):
+
+https://colab.research.google.com/drive/1VVc3AFAo2HRHFfrnam2v-hEFKut9oniW#scrollTo=toLwtBQGwCgY
+
 ## Resources
 CNN:
 - https://github.com/richzhang/colorization
