@@ -101,7 +101,10 @@ output_grey = convert.lab_to_rgb(img_gray.squeeze(0))
 final_img = to_pil(output_ab)
 final_grey = to_pil(output_grey)
 
+new_size = (224, 224)  # Replace with the desired size
+resized_image = final_img.resize(new_size)
 
+resized_image.save('evaluated-photos/out_cnn/output.jpg')
 # plt.imshow(final_img)
 # plt.show()
 
