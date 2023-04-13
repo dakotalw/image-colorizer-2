@@ -69,7 +69,13 @@ To revisit the loss function - as mentioned, LPIPS is not perfect and although i
 
 ![bw-outputs](https://github.com/dakotalw/image-colorizer-2/blob/main/bw-output.png)
 
-## Stable Diffusion
+## Next Steps
+
+The objective of this project is to show the advancements in image colorization. We initally improved our CNN model by replacing the MSE loss function in our with the Learned Perceptual Image Patch Similarity (LPIPS) loss function. This change resulted in a significant boost in model performance. However, more recently, other loss functions have emerged that offer even greater accuracy than LPIPS.
+
+In addition to this, in terms of transformers, stable diffusion has taken over with anything to do with images. Stable diffusion allows us to colorize and modify images based on specific prompts. This technique enables us to create prompts that allow us to colorize black and white photos in a precise and efficient manner.  
+
+### Stable Diffusion
 
 - Neural Network called ControlNet
 - **Canny Edge Detection Algorithm:** applied to the image to extract edges and convert it into a binary image. The process involves smoothing the image using a Gaussian filter, computing the gradient magnitude and direction at each pixel, suppressing non-maximum edges, and hysteresis thresholding to remove weak edges.        
