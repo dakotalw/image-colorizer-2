@@ -1,4 +1,4 @@
-# [Title]
+# Convolutional Neural Network and Transfomers
 By Jonathan Srinivasan and Dakota Wilson                                    
 DS-5899: Special Topics in Data Science - Transformers in Theory and Practice  
 
