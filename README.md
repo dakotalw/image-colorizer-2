@@ -64,7 +64,7 @@ enable_xformers_memory_efficient_attention()
 Original:              
 ![kideating](https://user-images.githubusercontent.com/48261978/231781731-9383cffa-efea-4fd6-98cf-80bb63160746.jpg)
 
-After Canny Edge Detection:
+After Canny Edge Detection:                                           
 ![kid2](https://user-images.githubusercontent.com/48261978/231782443-bdd38f06-dde0-488b-b7be-4fbef1ca6cde.png)
 
 
