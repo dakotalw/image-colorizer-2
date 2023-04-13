@@ -69,7 +69,7 @@ to_pil = transforms.ToPILImage()
 
 #MODEL
 model = ColorizationNet()
-model.load_state_dict(torch.load('./model-epoch-186-losses-0.124.pth', map_location=torch.device('cpu')))
+model.load_state_dict(torch.load('./checkpoints/model-epoch-186-losses-0.124.pth', map_location=torch.device('cpu')))
 model.train()
 
 #LOAD IMAGE
