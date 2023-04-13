@@ -14,6 +14,7 @@ What performs better in colorizing black and white photos? CNNs or Google ColTra
 
 *Note: How do we calculate image coloring performace? Loss function? Eye test? Speed? Clarity?*
 
+Let's use a CNN that we previously constructed for another course and compare it to Google's color transformer (ColTran)
 
 ## Data
 
