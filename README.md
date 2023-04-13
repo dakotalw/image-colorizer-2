@@ -51,7 +51,7 @@ This is not the worst problem to have, however! Modern transformer architectures
 ## Results/Analysis
 
 
-### Stable Diffusion
+## Stable Diffusion
 
 - Neural Network called ControlNet
 - **Canny Edge Detection Algorithm:** applied to the image to extract edges and convert it into a binary image. The process involves smoothing the image using a Gaussian filter, computing the gradient magnitude and direction at each pixel, suppressing non-maximum edges, and hysteresis thresholding to remove weak edges.        
