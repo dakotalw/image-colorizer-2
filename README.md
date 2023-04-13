@@ -16,7 +16,12 @@ DS-5899: Special Topics in Data Science - Transformers in Theory and Practice
 
 ## Methodology
 
-### Training
+### Convolutional Neural Network
+- Built a model that 1) decomposes a color picture and recolorizes it and 2) colorizes black and white photos
+- Improved upon a pretrained model (ex: switched loss function from MSE to LPIPS)
+- 18 layers that reduce and convolute the photo, and then deconvolutes it back to a full size image
+
+![Capture1](https://user-images.githubusercontent.com/48261978/231642125-66ce5354-792b-4f5d-a11e-699f3e4beacd.PNG)
 
 ### Testing
 
