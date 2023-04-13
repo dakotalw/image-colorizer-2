@@ -9,6 +9,10 @@ DS-5899: Special Topics in Data Science - Transformers in Theory and Practice
 
 ## Data
 
+- Dataset of sports photos (408.5 MB)
+- https://www.kaggle.com/datasets/gpiosenka/sports-classification
+- Includes photos of over 100 sports, with 10,000+ entries
+
 
 ## Methodology
 
