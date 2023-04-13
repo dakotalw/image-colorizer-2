@@ -1,4 +1,4 @@
-# Convolutional Neural Network and Transfomers
+# Image (Re)Colorization v2: Transformer Edition
 By Jonathan Srinivasan and Dakota Wilson                                    
 DS-5899: Special Topics in Data Science - Transformers in Theory and Practice  
 
