@@ -23,6 +23,12 @@ DS-5899: Special Topics in Data Science - Transformers in Theory and Practice
 
 ![Capture1](https://user-images.githubusercontent.com/48261978/231642125-66ce5354-792b-4f5d-a11e-699f3e4beacd.PNG)
 
+### Google ColTran
+
+
+### Stable Diffusion
+
+
 ### Testing
 
 
