@@ -29,7 +29,15 @@ DS-5899: Special Topics in Data Science - Transformers in Theory and Practice
 
 - Why use a transformer for this when a CNN architecture has proven to be a powerful learner that is able to do a decent job of recolorizing an image?
 
-Attention can prove to be incredibly helpful in the completion of this task; by increasing the receptive field that the model is able to "see" at each step, we expect our model to be able to provide more accurate results that take in the context of the whole photo. This context is something that a CNN is simply not able to find by taking traditional strides across an image. 
+Attention can prove to be incredibly helpful in the completion of this task; by increasing the receptive field that the model is able to "see" at each step, we expect our model to be able to provide more accurate results that take in the context of the whole photo. This context is something that a CNN is simply not able to find by taking traditional strides across an image.
+
+![ColTran Architecture](https://github.com/dakotalw/image-colorizer-2/blob/main/coltran_architecture.png)
+
+ColTran is comprised of three parts: an autoregressive colorizer that is based on a 
+
+
+
+
 
 ### Stable Diffusion
 
@@ -48,6 +56,9 @@ Negative Prompt: "black and white, low quality, no food"
 
 ### Testing
 
+![outputs](https://github.com/dakotalw/image-colorizer-2/blob/main/grid_of_images.png)
+
+In our testing, the CNN output images actually had a slightly lower LPIPS score than ColTran. There could be several reasons for this, but it is more than likely due to the precision in the color of ColTran. We can observe that although the colors may not be as accurate, ColTran does a much better job of being consistent with its color choices, compared to the patchy look that our CNN gives. If an object is supposed to be blue, and a model predicts it as half blue and half red, the LPIPS would be lower for that prediction than if it had predicted completely red. However, when viewing one of these images, the all red image would look more natural to the human eye. This demonstrates both the weaknesss of LPIPS as well as how difficult it can be to create a loss function that accurately represents human vision.
 
 ### Limitations
 
